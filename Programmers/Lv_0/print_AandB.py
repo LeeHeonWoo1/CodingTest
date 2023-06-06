@@ -20,4 +20,7 @@ a와 b출력하기
 
 # map함수를 사용함으로서 두 줄에 걸쳐 변형해야하는 번거로움을 해소할 수 있다.
 a, b = map(int, input().strip().split(' '))
-print(f'a = {a}\nb = {b}')
+if -100000 < a < 100000 and -100000 < b < 100000:
+  print(f'a = {a}\nb = {b}')
+else:
+  print('out of range')
