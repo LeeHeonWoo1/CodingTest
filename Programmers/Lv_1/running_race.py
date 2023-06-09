@@ -35,3 +35,5 @@ def solution(players, callings):
       player_idx = player_dict[call] # 플레이어의 현재 순위를 찾고
       players[player_idx], players[player_idx - 1] = players[player_idx-1], players[player_idx] # 앞 플레이어와 교체
       player_dict[players[player_idx]], player_dict[players[player_idx-1]] = player_idx, player_idx-1 # 변경된 사항을 dictionary에도 반영. 그래야 이후에 수행될 작업에서도 일관된 작업이 가능하다.
+      
+    return players
