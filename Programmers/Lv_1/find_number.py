@@ -21,4 +21,8 @@ def solution(n):
     for i in range(1, n):
         if n%i == 1:
             temp_list.append(i)
-    return min(temp_list)
+    return min(temp_list) # 문제는 통과했지만, 시간 복잡도를 고려했을 때 좋지 않은 선택
+
+# 다른 풀이
+def solution1(n):
+    return [x for x in range(1, n) if n%x == 1][0]
